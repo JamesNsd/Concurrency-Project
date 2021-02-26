@@ -1,0 +1,67 @@
+\hypertarget{twinPrimes_8cpp}{}\doxysection{twin\+Primes.\+cpp File Reference}
+\label{twinPrimes_8cpp}\index{twinPrimes.cpp@{twinPrimes.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$omp.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{twinPrimes_8cpp_af00a28c7c1f2ffc6a5f72e0a9cfd4bc8}{countp}} (long long n)
+\begin{DoxyCompactList}\small\item\em Using Sieve of Erastothene, counts the number of primes up to n. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{twinPrimes_8cpp_a5dd1bb0407f402176377b22f5e03545f}{concurrent}} (long long n)
+\begin{DoxyCompactList}\small\item\em Concurrent program to calculate the number of twin primes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{twinPrimes_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{twinPrimes_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+James Nolan 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/02/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+License\+: GNU Affero General Public License v3.\+0. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{twinPrimes_8cpp_a5dd1bb0407f402176377b22f5e03545f}\label{twinPrimes_8cpp_a5dd1bb0407f402176377b22f5e03545f}} 
+\index{twinPrimes.cpp@{twinPrimes.cpp}!concurrent@{concurrent}}
+\index{concurrent@{concurrent}!twinPrimes.cpp@{twinPrimes.cpp}}
+\doxysubsubsection{\texorpdfstring{concurrent()}{concurrent()}}
+{\footnotesize\ttfamily long concurrent (\begin{DoxyParamCaption}\item[{long long}]{n }\end{DoxyParamCaption})}
+
+
+
+Concurrent program to calculate the number of twin primes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is the number to calculate the primes up to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of twins 
+\end{DoxyReturn}
+\mbox{\Hypertarget{twinPrimes_8cpp_af00a28c7c1f2ffc6a5f72e0a9cfd4bc8}\label{twinPrimes_8cpp_af00a28c7c1f2ffc6a5f72e0a9cfd4bc8}} 
+\index{twinPrimes.cpp@{twinPrimes.cpp}!countp@{countp}}
+\index{countp@{countp}!twinPrimes.cpp@{twinPrimes.cpp}}
+\doxysubsubsection{\texorpdfstring{countp()}{countp()}}
+{\footnotesize\ttfamily long countp (\begin{DoxyParamCaption}\item[{long long}]{n }\end{DoxyParamCaption})}
+
+
+
+Using Sieve of Erastothene, counts the number of primes up to n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is the number to calculate the primes up to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of primes 
+\end{DoxyReturn}

@@ -1,0 +1,45 @@
+Concurrency Project - Prime Numbers
+
+There are an infinite number of prime numbers. Amongst the primes thereare what are known as twin primes.
+
+A twin prime is a prime number that is either 2 less or 2 more thananother prime number—for example, either member of the twin prime pair(41, 43).
+In other words, a twin prime is a prime that has a prime gap of two. Sometimes the term twin prime is used for a pair of twin primes; an
+alternative name for this is prime twin or prime pair. It is (currently) unknown whether there are an infinite number of twinprimes. 
+Examples include: (3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41,43),...
+
+Your task is to write a parallel program that counts the number of primesless thannfor any numbernand also finds and lists all twin primes less than.
+The code should run on linux. Example output after running your code with n = 50 would be:
+
+    primeTwinCount 50 Total number of primes: 15 Twin Primes: 3, 5, 7, 11, 13, 17, 19, 29, 31, 41, 43
+
+You must submit the following: Source Code
+Full source code including README, full installation in-structions, Makefile and Doxygen Configuration file;
+
+Report A short report on the approach you took to achieving maximumconcurrency. This will contain: PseudocodeOutline of the algorithm illustrated with pseudocode; 
+Speedup Results Both absolute speedup and relative speed up should be calculated ScalabilityGraph(s) showing the scalabiltiy of your code. 
+The report does not need to be long. It must be concise and on point.The idea is that you learn how to measure code performance as well aswrite parallel code. 
+There is plenty of scope for making the code eﬀicient.
+
+
+Title: Twin Primes
+
+Author: James Nolan
+
+Description: This project is to demonstrate the difference in concurrent and sequential code by finding the number of twin primes in a range.
+
+In this report there will be :
+	Times the binary number of threads (1,2,4,8,16 etc) took to compute, and their absolute and relative speedups.
+	A table and graph produced by testing the scalability of the program, using the sequential version and increasing the number the program must check for twin primes.
+	
+
+Dependencies:
+gcc version 7.5.0 or greater
+Make
+
+Install:
+run "make TWINCON" in directory with code to make the Parallel version.
+run "make TWINSEQ" in directory with code to make the Sequential version.
+
+Usage:
+type "time ./twinPrimes" to run parallel version with a timer.
+type "time ./twinPrimesSeq" to run sequential version with a timer.
